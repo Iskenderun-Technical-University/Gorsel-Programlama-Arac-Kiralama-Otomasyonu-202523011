@@ -51,7 +51,7 @@ Kullanıcı portföyüne araç ekleyebilir, fiyatları güncelleyebilir, kendisi
 
  - Araç kataloğu sayfasına girerek araçların fotoğraflarına ve özelliklerine bakabilir.
  - Fiyatlandırma sayfasından beğendiği aracın özelliklerini seçip, kullanacağı gün sayısını belirterek ödeyeceği fiyatı görebilir ve sipariş oluşturabilir.
- - İletişim sayfasında "Mesajınızı giriniz..." yazan kısma mesajlarını yazarak, gönder butonuna basarak şirkete mesaj gönderebilir.
+ - İletişim sayfasında "Mesajınız..." yazan kısma mesajlarını yazarak, gönder butonuna basarak şirkete mesaj gönderebilir.
 
  ## Admin ##
 
