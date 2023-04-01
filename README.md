@@ -57,7 +57,7 @@ Kullanıcı portföyüne araç ekleyebilir, fiyatları güncelleyebilir, kendisi
 
  - Giriş yap kısmından verilen kullanıcı adı ve parola ile giriş yapabilir.
  - Gelen Admin panelinden;
- 1-) Araç Ekleyebilir/Kaldırabilir.
- 2-) Fiyat Güncelleyebilir
- 3-) Gelen Mesajları Görebilir
- 4-) Oluşturulan Siparişleri Onaylayabilir.
+  - Araç Ekleyebilir/Kaldırabilir.
+  - Fiyat Güncelleyebilir
+  - Gelen Mesajları Görebilir
+  - Oluşturulan Siparişleri Onaylayabilir.
