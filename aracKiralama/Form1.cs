@@ -81,10 +81,5 @@ namespace aracKiralama
             MessageBox.Show("Mesajınız iletildi, değerli fikirleriniz için teşekkürler!");
             mesajTxtBox.Text = "Mesajınız...";
         }
-
-        private void materialLabel6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -11,3 +11,16 @@ C:\Users\User\Desktop\İSTE\Araç Kiralama VDGP Ödevi Google Material\aracKiral
 C:\Users\User\Desktop\İSTE\Araç Kiralama VDGP Ödevi Google Material\aracKiralama\obj\Debug\aracKiralama.csproj.CopyComplete
 C:\Users\User\Desktop\İSTE\Araç Kiralama VDGP Ödevi Google Material\aracKiralama\obj\Debug\aracKiralama.exe
 C:\Users\User\Desktop\İSTE\Araç Kiralama VDGP Ödevi Google Material\aracKiralama\obj\Debug\aracKiralama.pdb
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\bin\Debug\aracKiralama.exe.config
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\bin\Debug\aracKiralama.exe
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\bin\Debug\aracKiralama.pdb
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\bin\Debug\MaterialSkin.dll
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.Form1.resources
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.Properties.Resources.resources
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.CopyComplete
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.exe
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.pdb
