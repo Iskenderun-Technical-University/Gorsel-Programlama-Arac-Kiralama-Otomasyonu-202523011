@@ -51,7 +51,6 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.mesajTxtBox = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.passwordTxtBox = new MaterialSkin.Controls.MaterialTextBox();
@@ -60,6 +59,7 @@
             this.aracIsimLbl = new MaterialSkin.Controls.MaterialLabel();
             this.aracModelLbl = new MaterialSkin.Controls.MaterialLabel();
             this.aracFiyatLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -405,7 +405,7 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.materialButton2);
+            this.tabPage5.Controls.Add(this.materialLabel7);
             this.tabPage5.Controls.Add(this.materialButton1);
             this.tabPage5.Controls.Add(this.passwordTxtBox);
             this.tabPage5.Controls.Add(this.usernameTxt);
@@ -417,27 +417,6 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Giriş Yap";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.ImageKey = "login.png";
-            this.materialButton2.ImageList = this.ımageList1;
-            this.materialButton2.Location = new System.Drawing.Point(313, 293);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(84, 36);
-            this.materialButton2.TabIndex = 3;
-            this.materialButton2.Text = "Kayıt ol";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton2.UseAccentColor = true;
-            this.materialButton2.UseVisualStyleBackColor = true;
             // 
             // ımageList1
             // 
@@ -457,7 +436,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(313, 230);
+            this.materialButton1.Location = new System.Drawing.Point(327, 358);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -468,6 +447,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // passwordTxtBox
             // 
@@ -476,7 +456,7 @@
             this.passwordTxtBox.Depth = 0;
             this.passwordTxtBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.passwordTxtBox.LeadingIcon = null;
-            this.passwordTxtBox.Location = new System.Drawing.Point(206, 142);
+            this.passwordTxtBox.Location = new System.Drawing.Point(220, 270);
             this.passwordTxtBox.MaxLength = 50;
             this.passwordTxtBox.MouseState = MaterialSkin.MouseState.OUT;
             this.passwordTxtBox.Multiline = false;
@@ -486,6 +466,7 @@
             this.passwordTxtBox.TabStop = false;
             this.passwordTxtBox.Text = "";
             this.passwordTxtBox.TrailingIcon = null;
+            this.passwordTxtBox.TextChanged += new System.EventHandler(this.passwordTxtBox_TextChanged);
             this.passwordTxtBox.Enter += new System.EventHandler(this.passwordTxtBox_Enter);
             this.passwordTxtBox.Leave += new System.EventHandler(this.passwordTxtBox_Leave);
             // 
@@ -496,7 +477,7 @@
             this.usernameTxt.Depth = 0;
             this.usernameTxt.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.usernameTxt.LeadingIcon = null;
-            this.usernameTxt.Location = new System.Drawing.Point(206, 58);
+            this.usernameTxt.Location = new System.Drawing.Point(220, 186);
             this.usernameTxt.MaxLength = 50;
             this.usernameTxt.MouseState = MaterialSkin.MouseState.OUT;
             this.usernameTxt.Multiline = false;
@@ -506,6 +487,7 @@
             this.usernameTxt.TabStop = false;
             this.usernameTxt.Text = "";
             this.usernameTxt.TrailingIcon = null;
+            this.usernameTxt.TextChanged += new System.EventHandler(this.usernameTxt_TextChanged);
             this.usernameTxt.Enter += new System.EventHandler(this.usernameTxt_Enter);
             this.usernameTxt.Leave += new System.EventHandler(this.usernameTxt_Leave);
             // 
@@ -525,7 +507,7 @@
             this.aracIsimLbl.Depth = 0;
             this.aracIsimLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.aracIsimLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracIsimLbl.Location = new System.Drawing.Point(397, 6);
+            this.aracIsimLbl.Location = new System.Drawing.Point(397, 15);
             this.aracIsimLbl.MouseState = MaterialSkin.MouseState.HOVER;
             this.aracIsimLbl.Name = "aracIsimLbl";
             this.aracIsimLbl.Size = new System.Drawing.Size(236, 41);
@@ -538,7 +520,7 @@
             this.aracModelLbl.Depth = 0;
             this.aracModelLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.aracModelLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracModelLbl.Location = new System.Drawing.Point(397, 80);
+            this.aracModelLbl.Location = new System.Drawing.Point(397, 89);
             this.aracModelLbl.MouseState = MaterialSkin.MouseState.HOVER;
             this.aracModelLbl.Name = "aracModelLbl";
             this.aracModelLbl.Size = new System.Drawing.Size(77, 41);
@@ -551,12 +533,26 @@
             this.aracFiyatLbl.Depth = 0;
             this.aracFiyatLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.aracFiyatLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracFiyatLbl.Location = new System.Drawing.Point(397, 160);
+            this.aracFiyatLbl.Location = new System.Drawing.Point(397, 169);
             this.aracFiyatLbl.MouseState = MaterialSkin.MouseState.HOVER;
             this.aracFiyatLbl.Name = "aracFiyatLbl";
             this.aracFiyatLbl.Size = new System.Drawing.Size(104, 41);
             this.aracFiyatLbl.TabIndex = 3;
             this.aracFiyatLbl.Text = "550 TL";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto Light", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H2;
+            this.materialLabel7.Location = new System.Drawing.Point(223, 75);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(315, 72);
+            this.materialLabel7.TabIndex = 4;
+            this.materialLabel7.Text = "Admin Girişi";
+            this.materialLabel7.Click += new System.EventHandler(this.materialLabel7_Click);
             // 
             // Form1
             // 
@@ -600,7 +596,6 @@
         public System.Windows.Forms.ImageList ımageList1;
         private System.Windows.Forms.TabPage tabPage5;
         private MaterialSkin.Controls.MaterialTextBox usernameTxt;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialTextBox passwordTxtBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
@@ -622,6 +617,7 @@
         private MaterialSkin.Controls.MaterialLabel aracModelLbl;
         private MaterialSkin.Controls.MaterialLabel aracIsimLbl;
         private System.Windows.Forms.PictureBox aracPicBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
     }
 }
 

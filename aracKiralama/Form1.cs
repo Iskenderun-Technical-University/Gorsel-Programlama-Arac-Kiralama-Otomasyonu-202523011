@@ -81,5 +81,26 @@ namespace aracKiralama
             MessageBox.Show("Mesajınız iletildi, değerli fikirleriniz için teşekkürler!");
             mesajTxtBox.Text = "Mesajınız...";
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            Admin a = new Admin();
+            a.Show();
+        }
+
+        private void materialLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passwordTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernameTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

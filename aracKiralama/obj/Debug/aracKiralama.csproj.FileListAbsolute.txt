@@ -24,3 +24,4 @@ C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011
 C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.csproj.CopyComplete
 C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.exe
 C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.pdb
+C:\Users\User\source\repos\Gorsel-Programlama-Arac-Kiralama-Otomasyonu-202523011\aracKiralama\obj\Debug\aracKiralama.Admin.resources
