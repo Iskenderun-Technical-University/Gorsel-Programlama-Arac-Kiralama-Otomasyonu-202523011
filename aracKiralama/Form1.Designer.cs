@@ -51,15 +51,13 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.mesajTxtBox = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.passwordTxtBox = new MaterialSkin.Controls.MaterialTextBox();
             this.usernameTxt = new MaterialSkin.Controls.MaterialTextBox();
-            this.aracPicBox = new System.Windows.Forms.PictureBox();
-            this.aracIsimLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.aracModelLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.aracFiyatLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +67,6 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aracPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -115,10 +112,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.aracFiyatLbl);
-            this.tabPage2.Controls.Add(this.aracModelLbl);
-            this.tabPage2.Controls.Add(this.aracIsimLbl);
-            this.tabPage2.Controls.Add(this.aracPicBox);
+            this.tabPage2.Controls.Add(this.materialButton2);
+            this.tabPage2.Controls.Add(this.flowLayoutPanel1);
             this.tabPage2.ImageKey = "cars.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
@@ -418,16 +413,19 @@
             this.tabPage5.Text = "Giriş Yap";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // ımageList1
+            // materialLabel7
             // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "home.png");
-            this.ımageList1.Images.SetKeyName(1, "cars.png");
-            this.ımageList1.Images.SetKeyName(2, "pricing.png");
-            this.ımageList1.Images.SetKeyName(3, "contactUs.png");
-            this.ımageList1.Images.SetKeyName(4, "login.png");
-            this.ımageList1.Images.SetKeyName(5, "login2.png");
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto Light", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H2;
+            this.materialLabel7.Location = new System.Drawing.Point(223, 75);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(315, 72);
+            this.materialLabel7.TabIndex = 4;
+            this.materialLabel7.Text = "Admin Girişi";
+            this.materialLabel7.Click += new System.EventHandler(this.materialLabel7_Click);
             // 
             // materialButton1
             // 
@@ -491,68 +489,43 @@
             this.usernameTxt.Enter += new System.EventHandler(this.usernameTxt_Enter);
             this.usernameTxt.Leave += new System.EventHandler(this.usernameTxt_Leave);
             // 
-            // aracPicBox
+            // ımageList1
             // 
-            this.aracPicBox.Image = ((System.Drawing.Image)(resources.GetObject("aracPicBox.Image")));
-            this.aracPicBox.Location = new System.Drawing.Point(6, 6);
-            this.aracPicBox.Name = "aracPicBox";
-            this.aracPicBox.Size = new System.Drawing.Size(385, 212);
-            this.aracPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.aracPicBox.TabIndex = 0;
-            this.aracPicBox.TabStop = false;
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "home.png");
+            this.ımageList1.Images.SetKeyName(1, "cars.png");
+            this.ımageList1.Images.SetKeyName(2, "pricing.png");
+            this.ımageList1.Images.SetKeyName(3, "contactUs.png");
+            this.ımageList1.Images.SetKeyName(4, "login.png");
+            this.ımageList1.Images.SetKeyName(5, "login2.png");
             // 
-            // aracIsimLbl
+            // flowLayoutPanel1
             // 
-            this.aracIsimLbl.AutoSize = true;
-            this.aracIsimLbl.Depth = 0;
-            this.aracIsimLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.aracIsimLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracIsimLbl.Location = new System.Drawing.Point(397, 15);
-            this.aracIsimLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.aracIsimLbl.Name = "aracIsimLbl";
-            this.aracIsimLbl.Size = new System.Drawing.Size(236, 41);
-            this.aracIsimLbl.TabIndex = 1;
-            this.aracIsimLbl.Text = "Renault Symbol";
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 61);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(797, 222);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // aracModelLbl
+            // materialButton2
             // 
-            this.aracModelLbl.AutoSize = true;
-            this.aracModelLbl.Depth = 0;
-            this.aracModelLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.aracModelLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracModelLbl.Location = new System.Drawing.Point(397, 89);
-            this.aracModelLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.aracModelLbl.Name = "aracModelLbl";
-            this.aracModelLbl.Size = new System.Drawing.Size(77, 41);
-            this.aracModelLbl.TabIndex = 2;
-            this.aracModelLbl.Text = "2021";
-            // 
-            // aracFiyatLbl
-            // 
-            this.aracFiyatLbl.AutoSize = true;
-            this.aracFiyatLbl.Depth = 0;
-            this.aracFiyatLbl.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.aracFiyatLbl.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.aracFiyatLbl.Location = new System.Drawing.Point(397, 169);
-            this.aracFiyatLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.aracFiyatLbl.Name = "aracFiyatLbl";
-            this.aracFiyatLbl.Size = new System.Drawing.Size(104, 41);
-            this.aracFiyatLbl.TabIndex = 3;
-            this.aracFiyatLbl.Text = "550 TL";
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto Light", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H2;
-            this.materialLabel7.Location = new System.Drawing.Point(223, 75);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(315, 72);
-            this.materialLabel7.TabIndex = 4;
-            this.materialLabel7.Text = "Admin Girişi";
-            this.materialLabel7.Click += new System.EventHandler(this.materialLabel7_Click);
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(7, 7);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(158, 36);
+            this.materialButton2.TabIndex = 1;
+            this.materialButton2.Text = "Araçları Göster";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // Form1
             // 
@@ -581,7 +554,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aracPicBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -613,11 +585,9 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private MaterialSkin.Controls.MaterialLabel aracFiyatLbl;
-        private MaterialSkin.Controls.MaterialLabel aracModelLbl;
-        private MaterialSkin.Controls.MaterialLabel aracIsimLbl;
-        private System.Windows.Forms.PictureBox aracPicBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
     }
 }
 
