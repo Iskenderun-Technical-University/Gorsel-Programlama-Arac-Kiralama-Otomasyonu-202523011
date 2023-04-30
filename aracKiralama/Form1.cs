@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,7 +36,7 @@ namespace aracKiralama
         }
         private void usernameTxt_Enter(object sender, EventArgs e)
         {
-            if(usernameTxt.Text=="Kullanıcı Adı")
+            if (usernameTxt.Text == "Kullanıcı Adı")
             {
                 usernameTxt.Text = "";
             }
@@ -86,7 +87,7 @@ namespace aracKiralama
         private void materialButton1_Click(object sender, EventArgs e)
         {
             Admin a = new Admin();
-            Form1 b= new Form1();
+            Form1 b = new Form1();
             a.Show();
             b.Close();
         }
@@ -117,40 +118,63 @@ namespace aracKiralama
 
             string conn = "Data Source=LAPTOP-NCDFA6OH\\SQLEXPRESS;Initial Catalog=202523011-VTDGP;Integrated Security=True";
             ;
-            // Veritabanına bağlanarak resimleri çekiyoruz
             using (SqlConnection connection = new SqlConnection(conn))
             {
                 connection.Open();
+
                 string query = "SELECT * FROM tbl_arac";
                 SqlCommand command = new SqlCommand(query, connection);
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    // Resim ve açıklamayı çekiyoruz
-                    string imagePath = reader["image"].ToString();
-                    string description = reader["aciklama"].ToString();
+                    while (reader.Read())
+                    {
+                        // Resim ve açıklamayı çekiyoruz
+                        byte[] imageBytes = (byte[])reader["image"];
+                        string description = reader["aciklama"].ToString();
 
-                    // PictureBox oluşturuyoruz
-                    PictureBox pictureBox = new PictureBox();
-                    pictureBox.Image = Image.FromFile(imagePath);
-                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                    pictureBox.Width = 200;
-                    pictureBox.Height = 200;
+                        // Resmi MemoryStream nesnesine yüklüyoruz
+                        MemoryStream stream = new MemoryStream(imageBytes);
+                        PictureBox pictureBox = new PictureBox();
+                        using (Image img = Image.FromStream(stream))
+                        {
+                            // Resmi küçültüyoruz ve boyutlarını ayarlıyoruz
+                            int width = 400;
+                            int height = 400;
+                            if (img.Width > img.Height)
+                            {
+                                height = (int)(((float)img.Height / (float)img.Width) * width);
+                            }
+                            else
+                            {
+                                width = (int)(((float)img.Width / (float)img.Height) * height);
+                            }
 
-                    // Açıklama için Label oluşturuyoruz
-                    Label label = new Label();
-                    label.Text = description;
+                            Image thumbnail = img.GetThumbnailImage(width, height, null, IntPtr.Zero);
+                            pictureBox.Image = thumbnail;
+                        }
+                        pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
 
-                    // Yeni bir FlowLayoutPanel oluşturuyoruz
-                    FlowLayoutPanel panel = new FlowLayoutPanel();
-                    panel.FlowDirection = FlowDirection.TopDown;
-                    panel.Controls.Add(pictureBox);
-                    panel.Controls.Add(label);
-                    panel.Padding = new Padding(10);
+                        // PictureBox oluşturuyoruz
+                        /*PictureBox pictureBox = new PictureBox();
+                        pictureBox.Image = Image.FromStream(stream);
+                        pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                        pictureBox.Width = 200;
+                        pictureBox.Height = 200;*/
 
-                    // Ana panelimize yeni oluşturduğumuz paneli ekliyoruz
-                    flowLayoutPanel1.Controls.Add(panel);
+                        // Açıklama için Label oluşturuyoruz
+                        Label label = new Label();
+                        label.Text = description;
+
+                        // Yeni bir FlowLayoutPanel oluşturuyoruz
+                        FlowLayoutPanel panel = new FlowLayoutPanel();
+                        panel.FlowDirection = FlowDirection.TopDown;
+                        panel.Controls.Add(pictureBox);
+                        panel.Controls.Add(label);
+                        panel.Padding = new Padding(10);
+
+                        // Ana panelimize yeni oluşturduğumuz paneli ekliyoruz
+                        flowLayoutPanel1.Controls.Add(panel);
+                    }
                 }
             }
         }
