@@ -2,6 +2,14 @@
 
 İskenderun Teknik Üniversitesi Veri Tabanı Destekli Görsel Programlama dönem projesi.  Öğrenci numaram **202523011** ismim **Nasuhan Yunus Özkaya**
 
+**Veritabanı Bilgileri**
+Araçlar için bir tablo, kullanıcı girişleri için bir tablo ve tanımlanan kiralama kayıtlarını tutan bir tablo oluşturulacaktır.
+
+**Kullanılan Teknolojiler**
+-MsSQL
+-C#
+-Figma
+
 ***Dipnot:*** *Tasarım aşaması hala devam etmektedir. Program nasıl kullanılır kısmına göre dizayn edilecektir.*
 
 # Projeye İlk Bakış
