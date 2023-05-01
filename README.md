@@ -71,4 +71,4 @@ Kullanıcı portföyüne araç ekleyebilir, fiyatları güncelleyebilir, kendisi
    - Araç Ekleyebilir/Kaldırabilir.
    - Fiyat Güncelleyebilir
    - Gelen Mesajları Görebilir
-   - Oluşturulan Siparişleri Onaylayabilir.
+   - Oluşturulan Siparişleri Onaylayabilir .
