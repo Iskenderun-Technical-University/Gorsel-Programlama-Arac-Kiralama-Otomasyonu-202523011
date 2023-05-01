@@ -10,6 +10,9 @@
 - C#
 - Figma
 
+**Motivasyon**
+- Bu projeyi yapmaktaki motivasyonum; yakın arkadaşlarımdan birinin bu işle uğraşması ve işinde çektiği sıkıntılardan bahsetmesi oldu.
+
 ***Dipnot:*** *Tasarım aşaması hala devam etmektedir. Program nasıl kullanılır kısmına göre dizayn edilecektir.*
 
 # Projeye İlk Bakış
