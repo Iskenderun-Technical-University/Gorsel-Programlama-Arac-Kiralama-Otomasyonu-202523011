@@ -1,6 +1,18 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/uelKf0-p)
 # Araç Kiralama Otomasyonu 
 
 İskenderun Teknik Üniversitesi Veri Tabanı Destekli Görsel Programlama dönem projesi.  Öğrenci numaram **202523011** ismim **Nasuhan Yunus Özkaya**
+
+**Veritabanı Bilgileri**
+- Araçlar için bir tablo, kullanıcı girişleri için bir tablo ve tanımlanan kiralama kayıtlarını tutan bir tablo oluşturulacaktır.
+
+**Kullanılan Teknolojiler**
+- MsSQL
+- C#
+- Figma
+
+**Motivasyon**
+- Bu projeyi yapmaktaki motivasyonum; yakın arkadaşlarımdan birinin bu işle uğraşması ve işinde çektiği sıkıntılardan bahsetmesi oldu.
 
 ***Dipnot:*** *Tasarım aşaması hala devam etmektedir. Program nasıl kullanılır kısmına göre dizayn edilecektir.*
 
@@ -60,4 +72,4 @@ Kullanıcı portföyüne araç ekleyebilir, fiyatları güncelleyebilir, kendisi
    - Araç Ekleyebilir/Kaldırabilir.
    - Fiyat Güncelleyebilir
    - Gelen Mesajları Görebilir
-   - Oluşturulan Siparişleri Onaylayabilir.
+   - Oluşturulan Siparişleri Onaylayabilir .
