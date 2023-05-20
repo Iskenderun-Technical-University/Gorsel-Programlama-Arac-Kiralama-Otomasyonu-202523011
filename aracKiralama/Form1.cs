@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Animations;
 using MaterialSkin.Controls;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace aracKiralama
 {
@@ -30,6 +31,11 @@ namespace aracKiralama
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (Veritabanı.BaglantiDurum())
+            {
+                MessageBox.Show("Bağlantı kuruldu.");
+            }
+            aracPanel.Hide();
             usernameTxt.Text = "Kullanıcı Adı";
             passwordTxtBox.Text = "Parola";
             this.Select();
@@ -86,10 +92,17 @@ namespace aracKiralama
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
-            Form1 b = new Form1();
-            a.Show();
-            b.Close();
+            if(usernameTxt.Text=="Admin"&& passwordTxtBox.Text == "Password")
+            {
+                Admin a = new Admin();
+                Form1 b = new Form1();
+                a.Show();
+                b.Close();
+            }
+            else if (Veritabanı.LoginKontrol(usernameTxt.Text, passwordTxtBox.Text))
+            {
+                MessageBox.Show("Giriş naşarılı.");
+            }
         }
 
         private void materialLabel7_Click(object sender, EventArgs e)
@@ -107,76 +120,203 @@ namespace aracKiralama
 
         }
 
-        private void materialButton2_Click(object sender, EventArgs e)
+        private void renokiralaBtn_Click(object sender, EventArgs e)
         {
-            LoadImages();
-        }
-        private void LoadImages()
-        {
-            // Öncelikle, paneli temizleyelim
-            flowLayoutPanel1.Controls.Clear();
-
-            string conn = "Data Source=LAPTOP-NCDFA6OH\\SQLEXPRESS;Initial Catalog=202523011-VTDGP;Integrated Security=True";
-            ;
-            using (SqlConnection connection = new SqlConnection(conn))
+            if (materialComboBox1.DroppedDown == false)
             {
-                connection.Open();
+                materialComboBox1.DroppedDown = true;
+            }
 
-                string query = "SELECT * FROM tbl_arac";
-                SqlCommand command = new SqlCommand(query, connection);
-                using (SqlDataReader reader = command.ExecuteReader())
+            foreach (var item in materialComboBox1.Items)
+            {
+                if (item.ToString() == "Renault")
                 {
-                    while (reader.Read())
-                    {
-                        // Resim ve açıklamayı çekiyoruz
-                        byte[] imageBytes = (byte[])reader["image"];
-                        string description = reader["aciklama"].ToString();
-
-                        // Resmi MemoryStream nesnesine yüklüyoruz
-                        MemoryStream stream = new MemoryStream(imageBytes);
-                        PictureBox pictureBox = new PictureBox();
-                        using (Image img = Image.FromStream(stream))
-                        {
-                            // Resmi küçültüyoruz ve boyutlarını ayarlıyoruz
-                            int width = 400;
-                            int height = 400;
-                            if (img.Width > img.Height)
-                            {
-                                height = (int)(((float)img.Height / (float)img.Width) * width);
-                            }
-                            else
-                            {
-                                width = (int)(((float)img.Width / (float)img.Height) * height);
-                            }
-
-                            Image thumbnail = img.GetThumbnailImage(width, height, null, IntPtr.Zero);
-                            pictureBox.Image = thumbnail;
-                        }
-                        pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-
-                        // PictureBox oluşturuyoruz
-                        /*PictureBox pictureBox = new PictureBox();
-                        pictureBox.Image = Image.FromStream(stream);
-                        pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                        pictureBox.Width = 200;
-                        pictureBox.Height = 200;*/
-
-                        // Açıklama için Label oluşturuyoruz
-                        Label label = new Label();
-                        label.Text = description;
-
-                        // Yeni bir FlowLayoutPanel oluşturuyoruz
-                        FlowLayoutPanel panel = new FlowLayoutPanel();
-                        panel.FlowDirection = FlowDirection.TopDown;
-                        panel.Controls.Add(pictureBox);
-                        panel.Controls.Add(label);
-                        panel.Padding = new Padding(10);
-
-                        // Ana panelimize yeni oluşturduğumuz paneli ekliyoruz
-                        flowLayoutPanel1.Controls.Add(panel);
-                    }
+                    materialComboBox1.SelectedItem = item;
+                    break;
                 }
             }
+            if (materialComboBox2.DroppedDown == false)
+            {
+                materialComboBox2.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox2.Items)
+            {
+                if (item.ToString() == "SYMBOL")
+                {
+                    materialComboBox2.SelectedItem = item;
+                    break;
+                }
+            }
+
+            if (materialComboBox3.DroppedDown == false)
+            {
+                materialComboBox3.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox3.Items)
+            {
+                if (item.ToString() == "2021")
+                {
+                    materialComboBox3.SelectedItem = item;
+                    break;
+                }
+            }
+            materialTabControl1.SelectedTab = tabPage3;
+        }
+
+
+        private void clioKiralaBtn_Click_1(object sender, EventArgs e)
+        {
+            if (materialComboBox1.DroppedDown == false)
+            {
+                materialComboBox1.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox1.Items)
+            {
+                if (item.ToString() == "Renault")
+                {
+                    materialComboBox1.SelectedItem = item;
+                    break;
+                }
+            }
+            if (materialComboBox2.DroppedDown == false)
+            {
+                materialComboBox2.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox2.Items)
+            {
+                if (item.ToString() == "CLIO")
+                {
+                    materialComboBox2.SelectedItem = item;
+                    break;
+                }
+            }
+
+            if (materialComboBox3.DroppedDown == false)
+            {
+                materialComboBox3.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox3.Items)
+            {
+                if (item.ToString() == "2022")
+                {
+                    materialComboBox3.SelectedItem = item;
+                    break;
+                }
+            }
+            materialTabControl1.SelectedTab = tabPage3;
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            if (materialComboBox1.DroppedDown == false)
+            {
+                materialComboBox1.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox1.Items)
+            {
+                if (item.ToString() == "BMW")
+                {
+                    materialComboBox1.SelectedItem = item;
+                    break;
+                }
+            }
+            if (materialComboBox2.DroppedDown == false)
+            {
+                materialComboBox2.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox2.Items)
+            {
+                if (item.ToString() == "3.20D")
+                {
+                    materialComboBox2.SelectedItem = item;
+                    break;
+                }
+            }
+
+            if (materialComboBox3.DroppedDown == false)
+            {
+                materialComboBox3.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox3.Items)
+            {
+                if (item.ToString() == "2012")
+                {
+                    materialComboBox3.SelectedItem = item;
+                    break;
+                }
+            }
+            materialTabControl1.SelectedTab = tabPage3;
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            if (materialComboBox1.DroppedDown == false)
+            {
+                materialComboBox1.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox1.Items)
+            {
+                if (item.ToString() == "Maserati")
+                {
+                    materialComboBox1.SelectedItem = item;
+                    break;
+                }
+            }
+            if (materialComboBox2.DroppedDown == false)
+            {
+                materialComboBox2.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox2.Items)
+            {
+                if (item.ToString() == "Granturismo")
+                {
+                    materialComboBox2.SelectedItem = item;
+                    break;
+                }
+            }
+
+            if (materialComboBox3.DroppedDown == false)
+            {
+                materialComboBox3.DroppedDown = true;
+            }
+
+            foreach (var item in materialComboBox3.Items)
+            {
+                if (item.ToString() == "2008")
+                {
+                    materialComboBox3.SelectedItem = item;
+                    break;
+                }
+            }
+            materialTabControl1.SelectedTab = tabPage3;
+        }
+
+        private void nextPage_Click(object sender, EventArgs e)
+        {
+            aracPanel.Show();
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            aracPanel.Hide();
+        }
+
+        private void kayitBtn_Click(object sender, EventArgs e)
+        {
+            kullaniciEkle a = new kullaniciEkle();
+            a.Show();
         }
     }
 }
+    
+
