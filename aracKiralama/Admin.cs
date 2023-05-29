@@ -30,6 +30,7 @@ namespace aracKiralama
         private void Admin_Load(object sender, EventArgs e)
         {
             FillDataGridView();
+            Veritabanı.GridDoldur(mesajDataGridView, "tbl_mesaj", Veritabanı.sqlcon);
         }
         private void btnResimSec_Click(object sender, EventArgs e)
         {
@@ -45,40 +46,12 @@ namespace aracKiralama
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            /*if (txtAciklama.Text == "" || txtResimYolu.Text == "")
-            {
-                MessageBox.Show("Lütfen bir resim ve açıklama seçin.");
-            }
-            else
-            {
-                try
-                {
-                    string connectionString = "Data Source=LAPTOP-NCDFA6OH\\SQLEXPRESS;Initial Catalog=202523011-VTDGP;Integrated Security=True";
-                    using (SqlConnection connection = new SqlConnection(connectionString))
-                    {
-                        connection.Open();
-                        string query = "INSERT INTO tbl_arac (image, aciklama) VALUES (@image, @aciklama)";
-                        SqlCommand command = new SqlCommand(query, connection);
-                        command.Parameters.AddWithValue("@image", ImageToByteArray(pbResim.Image));
-                        command.Parameters.AddWithValue("@aciklama", txtAciklama.Text);
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("Kayıt başarıyla eklendi.");
-                        connection.Close();
-
-                        Yenile();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Kayıt eklenirken bir hata oluştu: " + ex.Message);
-                }
-            }*/
-            
+                       
                 if (txtAciklama.Text == "" || txtResimYolu.Text == "")
                 {
                     MessageBox.Show("Lütfen bir resim ve açıklama seçin.");
                 }
-                else if (pbResim.Image == null) // Check if pbResim.Image is null
+                else if (pbResim.Image == null)
                 {
                     MessageBox.Show("Lütfen geçerli bir resim seçin.");
                 }

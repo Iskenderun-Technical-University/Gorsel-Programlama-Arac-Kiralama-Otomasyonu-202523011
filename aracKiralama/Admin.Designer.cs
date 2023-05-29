@@ -33,6 +33,7 @@ namespace aracKiralama
         {
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnSil = new MaterialSkin.Controls.MaterialButton();
             this.btnGuncelle = new MaterialSkin.Controls.MaterialButton();
@@ -44,11 +45,19 @@ namespace aracKiralama
             this.txtAciklama = new MaterialSkin.Controls.MaterialTextBox();
             this.pbResim = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tarihLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.gonderenLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.mesajLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.mesajDataGridView = new System.Windows.Forms.DataGridView();
             this.materialTabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mesajDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -68,6 +77,7 @@ namespace aracKiralama
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -75,6 +85,15 @@ namespace aracKiralama
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sipariş Kontrol";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1256, 658);
+            this.dataGridView2.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -227,12 +246,61 @@ namespace aracKiralama
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.tarihLbl);
+            this.tabPage3.Controls.Add(this.gonderenLbl);
+            this.tabPage3.Controls.Add(this.mesajLbl);
+            this.tabPage3.Controls.Add(this.mesajDataGridView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1262, 664);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Gelen Kutusu";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tarihLbl
+            // 
+            this.tarihLbl.AutoSize = true;
+            this.tarihLbl.Depth = 0;
+            this.tarihLbl.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tarihLbl.Location = new System.Drawing.Point(988, 32);
+            this.tarihLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tarihLbl.Name = "tarihLbl";
+            this.tarihLbl.Size = new System.Drawing.Size(107, 19);
+            this.tarihLbl.TabIndex = 3;
+            this.tarihLbl.Text = "materialLabel3";
+            // 
+            // gonderenLbl
+            // 
+            this.gonderenLbl.AutoSize = true;
+            this.gonderenLbl.Depth = 0;
+            this.gonderenLbl.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gonderenLbl.Location = new System.Drawing.Point(686, 32);
+            this.gonderenLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.gonderenLbl.Name = "gonderenLbl";
+            this.gonderenLbl.Size = new System.Drawing.Size(107, 19);
+            this.gonderenLbl.TabIndex = 2;
+            this.gonderenLbl.Text = "materialLabel2";
+            // 
+            // mesajLbl
+            // 
+            this.mesajLbl.AutoSize = true;
+            this.mesajLbl.Depth = 0;
+            this.mesajLbl.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.mesajLbl.Location = new System.Drawing.Point(3, 32);
+            this.mesajLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mesajLbl.Name = "mesajLbl";
+            this.mesajLbl.Size = new System.Drawing.Size(107, 19);
+            this.mesajLbl.TabIndex = 1;
+            this.mesajLbl.Text = "materialLabel1";
+            // 
+            // mesajDataGridView
+            // 
+            this.mesajDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.mesajDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.mesajDataGridView.Location = new System.Drawing.Point(0, 333);
+            this.mesajDataGridView.Name = "mesajDataGridView";
+            this.mesajDataGridView.Size = new System.Drawing.Size(1262, 331);
+            this.mesajDataGridView.TabIndex = 0;
             // 
             // Admin
             // 
@@ -246,12 +314,17 @@ namespace aracKiralama
             this.Text = "Admin Paneli";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.materialTabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mesajDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,5 +349,10 @@ namespace aracKiralama
         private MaterialSkin.Controls.MaterialTextBox txtAciklama;
         private MaterialSkin.Controls.MaterialButton btnResimSec;
         private System.Windows.Forms.TextBox txtResimYolu;
+        private DataGridView dataGridView2;
+        private MaterialSkin.Controls.MaterialLabel tarihLbl;
+        private MaterialSkin.Controls.MaterialLabel gonderenLbl;
+        private MaterialSkin.Controls.MaterialLabel mesajLbl;
+        private DataGridView mesajDataGridView;
     }
 }

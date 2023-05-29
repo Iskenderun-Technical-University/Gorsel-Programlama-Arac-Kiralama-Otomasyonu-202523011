@@ -32,50 +32,41 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.aracPanel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.backBtn = new MaterialSkin.Controls.MaterialButton();
             this.nextPage = new MaterialSkin.Controls.MaterialButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.clioKiralaBtn = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.renokiralaBtn = new MaterialSkin.Controls.MaterialButton();
             this.aracName = new MaterialSkin.Controls.MaterialLabel();
-            this.renoAracPic = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.materialComboBox4 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialComboBox3 = new MaterialSkin.Controls.MaterialComboBox();
@@ -85,7 +76,6 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.msjGonderBtn = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.mesajTxtBox = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
@@ -96,30 +86,40 @@
             this.usernameTxt = new MaterialSkin.Controls.MaterialTextBox();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.kayitBtn = new MaterialSkin.Controls.MaterialButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.renoAracPic = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.aracPanel.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.renoAracPic)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renoAracPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -151,17 +151,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ana Sayfa";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::aracKiralama.Properties.Resources.afis;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(973, 960);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // tabPage2
             // 
@@ -247,16 +236,6 @@
             this.materialLabel20.TabIndex = 1;
             this.materialLabel20.Text = "Peugeot 206";
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.materialLabel17);
@@ -313,16 +292,6 @@
             this.materialLabel18.TabIndex = 1;
             this.materialLabel18.Text = "Fiat Egea";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.materialLabel15);
@@ -378,16 +347,6 @@
             this.materialLabel16.Size = new System.Drawing.Size(118, 41);
             this.materialLabel16.TabIndex = 1;
             this.materialLabel16.Text = "Audi A3";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
             // 
             // backBtn
             // 
@@ -486,16 +445,6 @@
             this.materialLabel14.TabIndex = 1;
             this.materialLabel14.Text = "Maserati Granturismo";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.materialLabel11);
@@ -552,16 +501,6 @@
             this.materialLabel12.Size = new System.Drawing.Size(178, 41);
             this.materialLabel12.TabIndex = 1;
             this.materialLabel12.Text = "BMW 3.20D";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
             // 
             // panel2
             // 
@@ -620,16 +559,6 @@
             this.materialLabel10.TabIndex = 1;
             this.materialLabel10.Text = "Renault Clio";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(435, 224);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.materialLabel8);
@@ -687,21 +616,10 @@
             this.aracName.TabIndex = 1;
             this.aracName.Text = "Renault Symbol";
             // 
-            // renoAracPic
-            // 
-            this.renoAracPic.Image = ((System.Drawing.Image)(resources.GetObject("renoAracPic.Image")));
-            this.renoAracPic.Location = new System.Drawing.Point(3, 3);
-            this.renoAracPic.Name = "renoAracPic";
-            this.renoAracPic.Size = new System.Drawing.Size(435, 224);
-            this.renoAracPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.renoAracPic.TabIndex = 0;
-            this.renoAracPic.TabStop = false;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.materialButton2);
             this.tabPage3.Controls.Add(this.materialLabel6);
-            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.materialComboBox4);
             this.tabPage3.Controls.Add(this.materialLabel5);
             this.tabPage3.Controls.Add(this.materialComboBox3);
@@ -710,6 +628,7 @@
             this.tabPage3.Controls.Add(this.materialLabel3);
             this.tabPage3.Controls.Add(this.materialLabel2);
             this.tabPage3.Controls.Add(this.materialComboBox1);
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.ImageKey = "pricing.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Name = "tabPage3";
@@ -737,6 +656,7 @@
             this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton2.UseAccentColor = false;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // materialLabel6
             // 
@@ -751,17 +671,6 @@
             this.materialLabel6.Size = new System.Drawing.Size(391, 14);
             this.materialLabel6.TabIndex = 9;
             this.materialLabel6.Text = "7 günden daha uzun süreli kiralamalar için lütfen bizimle iletişime geçin.";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox3.Image = global::aracKiralama.Properties.Resources.logo;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 645);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(973, 318);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
             // 
             // materialComboBox4
             // 
@@ -943,17 +852,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bize Ulaşın!";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Image = global::aracKiralama.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 521);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(979, 445);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // msjGonderBtn
             // 
             this.msjGonderBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -1069,7 +967,7 @@
             this.passwordTxtBox.AnimateReadOnly = false;
             this.passwordTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTxtBox.Depth = 0;
-            this.passwordTxtBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.passwordTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.passwordTxtBox.LeadingIcon = null;
             this.passwordTxtBox.Location = new System.Drawing.Point(220, 270);
             this.passwordTxtBox.MaxLength = 50;
@@ -1090,7 +988,7 @@
             this.usernameTxt.AnimateReadOnly = false;
             this.usernameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTxt.Depth = 0;
-            this.usernameTxt.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.usernameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.usernameTxt.LeadingIcon = null;
             this.usernameTxt.Location = new System.Drawing.Point(220, 186);
             this.usernameTxt.MaxLength = 50;
@@ -1137,6 +1035,109 @@
             this.kayitBtn.UseVisualStyleBackColor = true;
             this.kayitBtn.Click += new System.EventHandler(this.kayitBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::aracKiralama.Properties.Resources.afis;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(973, 960);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(435, 224);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // renoAracPic
+            // 
+            this.renoAracPic.Image = ((System.Drawing.Image)(resources.GetObject("renoAracPic.Image")));
+            this.renoAracPic.Location = new System.Drawing.Point(3, 3);
+            this.renoAracPic.Name = "renoAracPic";
+            this.renoAracPic.Size = new System.Drawing.Size(435, 224);
+            this.renoAracPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.renoAracPic.TabIndex = 0;
+            this.renoAracPic.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox3.Image = global::aracKiralama.Properties.Resources.logo;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 645);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(973, 318);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox2.Image = global::aracKiralama.Properties.Resources.logo;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 521);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(979, 445);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1153,40 +1154,40 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.aracPanel.ResumeLayout(false);
             this.aracPanel.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.renoAracPic)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renoAracPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

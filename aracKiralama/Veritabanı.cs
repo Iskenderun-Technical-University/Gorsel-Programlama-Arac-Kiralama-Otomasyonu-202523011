@@ -64,6 +64,19 @@ namespace aracKiralama
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public static DataGridView GridDoldur(DataGridView gridim, string tablo, string sorgu)
+        {
+            con = new SqlConnection(sqlcon);
+            da = new SqlDataAdapter(sorgu, con);
+            ds = new DataSet();
+            con.Open();
+            da.Fill(ds, tablo);
+            gridim.DataSource = ds.Tables[tablo];
+            gridim.Columns[0].Visible = false;
+            con.Close();
+            return gridim;
+
+        }
 
     }
 }

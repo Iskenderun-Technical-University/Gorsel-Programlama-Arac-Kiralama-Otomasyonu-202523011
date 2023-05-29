@@ -18,6 +18,8 @@ namespace aracKiralama
 {
     public partial class Form1 : MaterialForm
     {
+        string kullanicimSession = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -86,8 +88,44 @@ namespace aracKiralama
 
         private void msjGonderBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Mesajınız iletildi, değerli fikirleriniz için teşekkürler!");
-            mesajTxtBox.Text = "Mesajınız...";
+            if (kullanicimSession != "" && mesajTxtBox.Text!="")
+            {
+               
+                string connectionString = Veritabanı.sqlcon;
+                string mesaj = mesajTxtBox.Text;
+                string gonderen = kullanicimSession;
+                DateTime msjTarih = DateTime.Now;
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+                        string query = "INSERT INTO tbl_mesaj (mesaj, gonderen, msjTarih) VALUES (@mesaj, @gonderen, @msjTarih)";
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@mesaj", mesaj);
+                            command.Parameters.AddWithValue("@gonderen", gonderen);
+                            command.Parameters.AddWithValue("@msjTarih", msjTarih);
+                            command.ExecuteNonQuery();
+                        }
+                        MessageBox.Show("Mesajınız iletildi, değerli fikirleriniz için teşekkürler!");
+                        mesajTxtBox.Text = "Mesajınız...";
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hata oluştu: " + ex.Message);
+                    }
+                }
+            }
+            else if(kullanicimSession=="")
+            {
+                MessageBox.Show("Mesaj gönderebilmek için giriş yapmanız gerekir.");
+            }
+            else
+            {
+                MessageBox.Show("Mesaj kutusu boş olmamalı.");
+            }
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
@@ -101,7 +139,8 @@ namespace aracKiralama
             }
             else if (Veritabanı.LoginKontrol(usernameTxt.Text, passwordTxtBox.Text))
             {
-                MessageBox.Show("Giriş naşarılı.");
+                MessageBox.Show("Giriş başarılı.");
+                kullanicimSession=usernameTxt.Text;
             }
         }
 
@@ -315,6 +354,11 @@ namespace aracKiralama
         {
             kullaniciEkle a = new kullaniciEkle();
             a.Show();
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
